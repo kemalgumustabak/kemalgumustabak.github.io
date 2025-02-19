@@ -1,62 +1,124 @@
-<!DOCTYPE html>
-<html lang="tr" data-theme="dark">
+<!doctype html>
+<html lang="tr" data-bs-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <title>👨🏻‍💻 Kemal Gümüştabak</title>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
-    <header>
+  <header class="container d-flex justify-content-center py-5">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Anasayfa</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Hakkımda</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Projeler</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">İletişim</a></li>
+    </ul>
+  </header>
 
-        <nav aria-label="breadcrumb" class="container">
-            <ul>
-                <li><a href="index.html" class="secondary">@mkgmstbk</a></li>
-                <li><a href="egitim.html">Eğitim</a></li>
-                <li><a href="#">Deneyim</a></li>
-                <li><a href="#">Projeler</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main class="container mb-5">
 
-    <article>
-        <div class="grid">
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <img src="/assets/xsxs.png" alt="Kemal Gümüştabak" style="max-width: 100%; height: auto;">
-            </div>
-            <div style=" padding: 3em; padding-left: 0%; " class="container">
-                <hgroup>
-                    <h2>Selam, ben Kemal! 👋🏻</h2>
-                    <h3>Yazılıma hevesli, girişimci ve etkinlik deneyimi üretmeye bayılan bir endüstri mühendisiyim.
-                    </h3>
-                </hgroup>
-                Üniversite hayatım boyunca mühendislik eğitimimin yanı sıra birçok kuruluşta çalışma fırsatı buldum.
-                Gerek stajlarım gerekse gönüllü yer aldığım kuruluşlar iş hayatıma kolaylıkla geçiş yapmamı
-                sağladı. İş hayatında monotonluktan uzak dinamik projelerde çalışmayı kendime misyon edindim. Bu
-                misyonla bugüne kadar farklı projelerde, farklı disiplinlerden kişilerle ve birçok alanda çalışma
-                fırsatı buldum. Kendimi araştırma, gündem okuma, analitik düşünme, strateji ve iletişim alanında
-                geliştirmeye adamış bir endüstri mühendisi olarak tanımlayabilirim.
-            </div>
+    <div class="text-secondary px-4 py-5 text-center">
+      <div class="py-5 px-5">
+        <img class="d-block mx-auto rounded mb-4" src="/assets/xsxs.png" alt="" width="200" height="200">
+        <h1 class="display-5 fw-bold text-white">Merhaba</h1>
+        <div class="col-lg-6 mx-auto pb-5">
+          <p class="fs-5 mb-5">Ben Kemal Gümüştabak, etkinlik dünyasında proje yönetimi üzerine uzmanlaşmış bir
+            profesyonelim. Yaklaşık 3 yıldır yazılım alanında kendimi geliştiriyorum. 10 yılı aşkın süredir yaratıcı
+            ajanslarda çalıştığım için yazılım dünyasında gereken kreatif ihtiyaçlara çözüm geliştirerek yazılım
+            alanında projeler geliştiriyorum. </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3 fw-bold">Projeleri Görüntüle</a>
+            <a type="button" class="btn btn-outline-secondary btn-lg px-4">Hakkımda Sayfasına Git</a>
+          </div>
         </div>
-        <footer style="display: flex; justify-content: space-evenly; align-items: center;">
-            <a target="_blank" href="mailto:kgumustabak@gmail.com"><i class="iconoir-send-mail"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/kemalgumustabak/"><i class="iconoir-linkedin"></i></a>
-            <a target="_blank" href="https://www.instagram.com/mkgmstbk/"><i class="iconoir-instagram"></i></a>
-        </footer>
+      </div>
+    </div>
 
-    </article>
 
-    <footer style="display: flex; justify-content: space-evenly; align-items: center;">
-        Kemal Gümüştabak • 2023
-    </footer>
 
+    <div class="row align-items-start pb-5">
+
+      <h1 class="display-5 fw-bold text-white text-center pb-5">Projeler</h1>
+
+      <div class="col-sm-4 my-3 text-center">
+        <div class="card">
+          <img src="/img/gurolherkesecan.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Av. Gürol Herkesecan</h5>
+            <p class="card-text">Av. Gürol beyin kendini ve çalışma alanlarını tanıttığı siteyi oluşturduk.</p>
+            <a href="https://gurolherkesecan.av.tr/" class="btn btn-outline-secondary">gurolherkesecan.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 my-3 text-center">
+        <div class="card bg-dark-subtle">
+          <img src="/img/kronos.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kronos Event</h5>
+            <p class="card-text">Kronos etkinlik ajansının tanıtıldığı ve projelerinin yer aldığı web sitesini hayata
+              geçirdik.</p>
+            <a href="https://kronosevent.com/" class="btn btn-outline-secondary">kronosevent.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 my-3 text-center">
+        <div class="card">
+          <img src="/img/momentumteknik.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Momentum Teknik</h5>
+            <p class="card-text">Momentum teknik firmasının hizmetlerinin ve iletişim bilgilerinin yer aldığı web
+              sitesini hazırladık.</p>
+            <a href="https://momentumteknik.com/" class="btn btn-outline-secondary">momentumteknik.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer mt-auto py-3 bg-body-tertiary text-center">
+    <div class="container">
+      
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="https://github.com/kemalgumustabak" class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/mkgmstbk/" class="nav-link px-2 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/kemalgumustabak/" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+      
+      <p class="text-center text-body-secondary"><small>© Copyright Kemal Gümüştabak 2025</small></p>
+    
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
